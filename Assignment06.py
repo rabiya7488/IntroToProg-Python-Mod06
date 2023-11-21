@@ -40,6 +40,8 @@ class FileProcessor:
         This function reads data from Json file and stores it into a list of dictionaries
         :param File_Name:
         :return: student_data:list[dict[str.str,str]]
+            Who,When,What
+            Rabiya Wasiq, 11/19/23, Created Function
         """
         File_Name : str
         student_data : list[dict[str,str,str]]
@@ -68,7 +70,9 @@ class FileProcessor:
         Writes data to Json file in the format list of dictionaries.
         :param student_row:
         :param students_data:
-        :return:
+        :return:None
+                Who,When,What
+                Rabiya Wasiq, 11/19/23, Created Function
         """
         student_row: dict
         students_data: list[dict[str, str, str]]
@@ -101,6 +105,8 @@ class IO:
         """ This function displays a custom error messages to the user
         default exception value set to none
           :return: None
+                Who,When,What
+                Rabiya Wasiq, 11/19/23, Created Function
         """
         print(message, end="\n\n")
 
@@ -114,6 +120,8 @@ class IO:
     def output_message(message : str):
         """ This function displays a custom messages to the user
           :return: None
+                Who,When,What
+                Rabiya Wasiq, 11/19/23, Created Function
         """
         print(message, end="\n\n")
 
@@ -123,6 +131,8 @@ class IO:
         This function displays the menu options to the user
         :param menu:
         :return: None
+                Who,When,What
+                Rabiya Wasiq, 11/19/23, Created Function
         """
         print(menu)
 
@@ -131,6 +141,8 @@ class IO:
         """
         This functions gets the menu choice from the user
         :return: menu_choice
+                Who,When,What
+                Rabiya Wasiq, 11/19/23, Created Function
         """
         menu_choice: str
         try:
@@ -147,6 +159,8 @@ class IO:
         This function displays all student data from the Json file, formatted in a string
         :param student_data:
         :return:
+               Who,When,What
+                Rabiya Wasiq, 11/19/23, Created Function
         """
         student_data: list[dict[str, str, str]]
         student_row :dict
@@ -160,6 +174,8 @@ class IO:
         This function gets first name, last name, course name from the user and adds them to a dictionary
         :param student_data:
         :return: student_row
+                Who,When,What
+                Rabiya Wasiq, 11/19/23, Created Function
         """
         student_row :dict = {}
         student_first_name: str = ''
@@ -197,6 +213,8 @@ class IO:
         This function presents data from a dictionary to the user in string formatting
         :param student_row:
         :return:
+                Who,When,What
+                Rabiya Wasiq, 11/19/23, Created Function
         """
         student_row:dict
         if student_row["First_Name"] == '' or student_row["Last_Name"] == '' or student_row["Course_Name"] == '':
@@ -210,6 +228,8 @@ class IO:
         """
         This function presents the user the choice to exit the program
         :return:exit_choice
+                Who,When,What
+                Rabiya Wasiq, 11/19/23, Created Function
         """
         exit_choice: str = ''
         exit_choice = input("Do you wish to exit the program? Y/N").capitalize()
